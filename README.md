@@ -1,40 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Habot Learning Support Provider Directory
 
-## Getting Started
+A modern and responsive web module built with **Next.js** and **TypeScript** that helps parents browse and discover learning support providers for children with learning difficulties. Built for the Habot Connect DMCC frontend assignment.
 
-First, run the development server:
+## ✨ Features
+
+- 🔍 **Search & Filter**: Find providers by name, category, or location.
+- 📋 **Provider Listing**: Clean and responsive grid display with ratings and categories.
+- 📄 **Provider Detail View**: Full page with details, services offered, contact info, and image.
+- 🧠 **Local API Simulation**: Data is fetched from a local JSON file to mimic API behavior.
+- 🎨 **Styled with Tailwind CSS**: Fully responsive and visually clean UI.
+- ⚛️ **Built with Next.js + React Hooks + TypeScript**
+
+---
+
+## 📁 Project Structure
+
+HABOT-PROVIDER-DIRECT/
+├── components/ # Reusable UI components (Header, Footer, ProviderCard)
+├── data/ # Local JSON data (providers.json)
+├── pages/ # Next.js pages (listing, detail)
+│ └── providers/
+│ ├── index.tsx # Provider listing page
+│ └── [id].tsx # Provider detail page
+├── public/images/ # Static images for providers
+├── styles/ # Global styles (Tailwind setup)
+├── types/ # TypeScript types (Provider type)
+├── tailwind.config.js # TailwindCSS configuration
+├── tsconfig.json # TypeScript configuration
+└── README.md # Project instructions
+
+yaml
+Copy
+Edit
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
+git clone https://github.com/your-username/habot-provider-directory.git
+cd habot-provider-directory
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+# or
+yarn
+3. Run the Development Server
+bash
+Copy
+Edit
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000/providers in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📦 Tech Stack
+React with Hooks
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Next.js for routing and SSR
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+TypeScript
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Tailwind CSS for styling
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+JSON as simulated backend API
 
-## Learn More
+🔧 Simulated API
+Data is sourced from /data/providers.json and imported into pages to simulate an asynchronous API fetch.
 
-To learn more about Next.js, take a look at the following resources:
+🧠 Possible Improvements
+Add loading skeletons / shimmer on fetch
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Add pagination or infinite scroll
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Add categories page or filters sidebar
 
-## Deploy on Vercel
+Move provider data fetching logic to a custom hook
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📄 License
+This project is built for assignment/demo purposes and is not licensed for commercial use.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+🙌 Acknowledgements
+Inspired by the mission of Habot Connect DMCC to simplify access to specialized learning support for children across India.

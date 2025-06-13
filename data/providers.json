@@ -1,0 +1,32 @@
+[
+  {
+    "id": "provider-1",
+    "name": "Bright Minds Academy",
+    "category": "Special Education",
+    "location": "Mumbai, India",
+    "description": "A center focused on inclusive education for children with learning differences.",
+    "services": ["Speech Therapy", "Occupational Therapy", "Academic Support"],
+    "rating": 4.5,
+    "image": "/images/bright-minds.jpg"
+  },
+  {
+    "id": "provider-2",
+    "name": "Future Learning Hub",
+    "category": "STEM Enrichment",
+    "location": "Bangalore, India",
+    "description": "Hands-on STEM programs for students aged 8–16.",
+    "services": ["Coding", "Robotics", "Math Lab"],
+    "rating": 4.2,
+    "image": "/images/future-learning.jpg"
+  },
+  {
+    "id": "provider-3",
+    "name": "Happy Kids Therapy",
+    "category": "Therapy & Wellness",
+    "location": "Delhi, India",
+    "description": "Personalized therapy programs for kids with developmental needs.",
+    "services": ["Behavioral Therapy", "Music Therapy"],
+    "rating": 4.7,
+    "image": "/images/happy-kids.jpg"
+  }
+]
