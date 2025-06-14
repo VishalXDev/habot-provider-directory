@@ -16,5 +16,7 @@ export interface Provider {
   availability?: string;
   languages?: string[];
   image?: string;
+  provider: Provider;
+  index?: number;
+  createdAt?: string | Date;
 }
-
